@@ -18,7 +18,7 @@ def encrypt(m, key):
     return r
 
 
-def decryot(c, key):
+def decrypt(c, key):
     c = c.upper()
     key = key.upper()
     k = ""
@@ -34,4 +34,4 @@ if __name__ == '__main__':
     keyword = input("Keyword:")
 
     print("Encrypted: " + encrypt(message, keyword))
-    print("Decrypted: " + decryot(encrypt(message, keyword), keyword))
+    print("Decrypted: " + decrypt(encrypt(message, keyword), keyword))
